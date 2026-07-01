@@ -64,9 +64,8 @@ then transmit from your phone's built-in IR blaster.
 13. [Edit IR Codes](#edit-ir-codes)
 14. [Settings](#settings)
 15. [External IR Dongle](#external-ir-dongle)
-16. [Build from Source](#build-from-source)
-17. [Troubleshooting](#troubleshooting)
-18. [Credits](#credits)
+16. [Troubleshooting](#troubleshooting)
+17. [Credits](#credits)
 
 ---
 
@@ -776,40 +775,7 @@ If your phone has no built-in IR blaster, a **3.5mm headphone-jack IR dongle** m
 
 ---
 
-## Build from Source
 
-> For developers only. Skip this section if you just want to use the APK.
-
-### Requirements
-
-| Tool | Version |
-|---|---|
-| Android Studio | Hedgehog or newer |
-| JDK | 17 (bundled with Android Studio) |
-| AGP | 8.2 |
-| Gradle | 8.2 |
-| Kotlin | 1.9 |
-| Min Android | 5.0 (API 21) |
-| Target Android | 14 (API 34) |
-
-### Steps
-
-1. Clone or download the repo: `https://github.com/engrpanda/RemoteControl_Cloner`
-2. **File → Open** → select the `RemoteControlCloner/` folder
-3. Wait for Gradle sync to complete
-4. Connect your Android phone with USB Debugging enabled
-5. Press **▶ Run**
-
-### Firebase
-
-The `app/google-services.json` file is included in the repo. The Community library (World Remotes → Community tab) connects to Firebase Firestore automatically — no setup needed.
-
-### Gradle Build Tips
-
-- If sync fails with "Plugin not found" → **File → Sync Project with Gradle Files**
-- If that doesn't help → **Build → Clean Project → Rebuild Project**
-- Check the **Build** output panel for the exact file and line number of any error
-- Make sure you're on JDK 17 (check **File → Project Structure → SDK Location → JDK Location**)
 
 ---
 
